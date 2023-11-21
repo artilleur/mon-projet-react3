@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
-// import './App.css';
+import React from 'react';
+import ParentComponent from './components/ParentComponent';
 
+const App = () => {
+  return (
+    <div>
+      <h1>Mon application React</h1>
+      <ParentComponent />
+    </div>
+  );
+};
 
-  const Counter = () => {
-    const [count, setCount] = useState(0);
-  
-    const increment = () => {
-      setCount(count + 1);
-    };
-  
-    return (
-      <div>
-        <p>Compteur: {count}</p>
-        <button onClick={increment}>Incrémenter</button>
-      </div>
-    );
-  };
-
-
- export default Counter;
+export default App;
